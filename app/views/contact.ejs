@@ -1,0 +1,74 @@
+<!----File name:contact.ejs--->
+<!----Author's name:Varin Upadhyay--->
+<!----http://localhost:3000/PERSONAL_POSRTFOLIO/contact.ejs ---->
+<!----File Description: This file contains feedback form and my contacts--->
+<html>
+<head>
+    <% include header %>
+</head>
+<body>
+	<div id="container1">
+		<!----nav---->
+		<nav>
+			 <% include navigation %>
+		</nav>	
+		
+		<!----header---->
+		<header>
+			<image id="logo" src='<%= imgUrl %>'></img>
+		</header>
+		
+		<div class="container">
+		<!-----aside---->
+		<aside>
+			<p></p><br/><br/>
+			<h3>Contact Me</h3>
+			<hr>
+		<div id="inside">
+			<h2>My Contacts</h2>
+			<div class="contacts">
+			 <address>
+			   <strong>Full Address:</strong>1901,Martin Grove Road,Etobicoke<br>
+               <strong>City:</strong>Toronto<br>
+			   <strong>Country:</strong>Canada<br>
+               <strong>Telephone:</strong>+647-892-7203<br>
+               <strong>Email ID:</strong>varin6033@gmail.com
+            </address>
+			</div>
+		</div>
+		</aside>
+		
+		<!----section---->
+		<section id="content">
+			<div id="banner">
+			<h2>Feedback <span>Form</span></h2>
+            <form id="feedback-form" action="">
+               <fieldset>
+			   <div class="field">
+					<label>Name:</lable>
+					<input type="text" value=""/>
+			   </div>
+			   <div class="field">
+					<label>E-mail:</lable>
+					<input type="text" value="">
+				</div>
+			   <div class="field1">
+					<label>Message:</lable>
+					<textarea cols="1" rows="1"></textarea>
+					<div id="button">
+					<input type="submit" name="submit" value="submit">
+					</div>
+				</div>
+				</fieldset>
+			</form>
+		</section>
+		</div>
+	</div>
+	
+		<!---footer---->
+		<footer>	
+            <% include footer %>	
+		</footer>
+</body>
+</html>
+</html>

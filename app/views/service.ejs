@@ -1,0 +1,51 @@
+<!----File name:service.ejs--->
+<!-----Author's name:Varin Upadhyay--->
+<!-------http://localhost:3000/PERSONAL_PORTFOLIO/service.ejs ---->
+<!-------File Description: This page gives the information about the services which author provides--->
+<html>
+<head>
+    <% include header %>
+</head>
+<body>
+	<div id="container1">
+		<!----nav---->
+		<nav>
+			 <% include navigation %>
+		</nav>	
+		
+		<!----header---->
+		<header>
+			<image id="logo" src='<%= imgUrl %>'></img>
+		</header>
+		
+		<div class="container">
+		
+		<!---section--->
+		<section id="content">
+			<div class="inside">
+				<h3>Services that we offer</h3>
+				<hr>
+					<ul class="projects">
+						<li><img src='<%= imgPhp %>' width=225px>
+							<h4>PHP TRAINING</h4>							
+							<p>I did one project in php.My project was CMS(Content Management System) For College.I built this project by using php and Mysql.So, i familiar with php language.</p>
+							<p>I can provide the training in php for built any website.
+						</li>
+						<br><br>
+						<li><img src='<%= imgC %>' width=225px>
+							<h4>C/C++ TUTORING</h4>							
+							<p>I was tutoring during my college days.So, i can teach c/c++ with basics.</p>
+						</li>
+					</ul>
+			</div>
+		</section>
+		</div>
+	</div>
+	
+		<!---footer---->
+		<footer>	
+            <% include footer %>	
+		</footer>
+</body>
+</html>
+</html>

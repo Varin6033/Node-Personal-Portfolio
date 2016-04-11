@@ -1,0 +1,59 @@
+<!----File name:aboutme.ejs.--->
+<!-----Author's name:Varin Upadhyay--->
+<!-------http://localhost:3000/PERSONAL_PORTFOLIO/aboutme.ejs ---->
+<!-------File Description: This page gives the information about author--->
+<html>
+<head>
+    <% include header %>
+</head>
+<body>
+	<div id="container1">
+		<!----nav---->
+		<nav>
+			 <% include navigation %>
+		</nav>	
+		
+		<!----header---->
+		<header>
+			<image id="logo" src='<%= imgUrl %>'></img>
+		</header>
+		
+		<div class="container">
+		<!-----aside---->
+		<aside>
+			<p></p><br/><br/>
+		 	<h3>About Me,</h3>
+			<hr>
+			<p>My name is Varin Upadhyay.I am studying in Centennial College(Progress Campus).My programme is software Engineering Technology.</p>		
+			<p>If u want to see my previous qualification in India then.....<a href="./resume">Click Here</a></p>
+		</aside>
+		
+		<!---section---->
+		<section id="content">
+			<div id="banner">
+				<img id="sunset" name="slide" src='<%= imgUrl1 %>'></img>
+				<script type="text/javascript">
+				var step = 1;
+				function slideit()
+				{
+					document.images.slide.src = eval("image"+step+".src");
+					if(step<3)
+					step++;
+					else
+					step=1;
+					setTimeout("slideit()",2500);
+				}
+                slideit()
+				</script>
+			</div>
+		</section>
+		</div>
+	</div>
+	
+		<!---footer---->
+		<footer>	
+            <% include footer %>	
+		</footer>
+</body>
+</html>
+</html>

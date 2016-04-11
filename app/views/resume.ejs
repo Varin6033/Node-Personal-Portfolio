@@ -1,0 +1,58 @@
+<!----File name:resume.ejs.--->
+<!-----Author's name:Varin Upadhyay--->
+<!-------http://localhost:3000/PERSONAL_PORTFOLIO/resume.ejs ---->
+<!-------File Description: This page displays the author's resume--->
+<html>
+<head>
+    <% include header %>
+</head>
+<body>
+	<div id="container1">
+		<!----nav---->
+		<nav>
+			 <% include navigation %>
+		</nav>	
+		
+		<!----header---->
+		<header>
+			<image id="logo" src='<%= imgUrl %>'></img>
+		</header>
+		
+		<div class="container">
+		<!-----aside---->
+		<aside><br/><br/>
+		 	<h3>Resume</h3>
+			<hr>
+			<p>This resume gives you information about my qualification in India.</p>		
+		</aside>
+		
+		<!---section---->
+		<section id="content">
+			<div id="banner">
+			<img id="sunset" src='<%= imgResume %>'></img>
+            <!--<img id="sunset" name="slide" src='<%= imgResume %>'></img>--->
+			<script type="text/javascript">
+			var step = 1;
+			function slideit()
+			{
+				document.images.slide.src = eval("image"+step+".src");
+				if(step<2)
+				step++;
+				else
+				step=1;
+				setTimeout("slideit()",10000);
+			}
+			slideit()
+			</script>
+			</div>
+		</section>
+		</div>
+	</div>
+	
+		<!---footer---->
+		<footer>	
+            <% include footer %>	
+		</footer>
+</body>
+</html>
+</html>
