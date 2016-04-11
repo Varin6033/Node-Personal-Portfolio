@@ -1,2 +1,1 @@
-Git Basics
-I am learning the basics git and git hub
+This is my personal portfolio site build by using Node JS
